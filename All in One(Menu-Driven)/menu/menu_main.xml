@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lab.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/val"
+        android:orderInCategory="101"
+        android:title="Validation" />
+    <item
+        android:id="@+id/imgtg"
+        android:orderInCategory="102"
+        android:title="Image Toggle" />
+    <item
+        android:id="@+id/calc"
+        android:orderInCategory="103"
+        android:title="Calculator" />
+    <item
+        android:id="@+id/imGrid"
+        android:orderInCategory="104"
+        android:title="Image Grid" />
+    <item
+        android:id="@+id/arr"
+        android:orderInCategory="105"
+        android:title="ArrayAdapter" />
+    <item
+        android:id="@+id/spin"
+        android:orderInCategory="106"
+        android:title="Spinner" />
+    <item
+        android:id="@+id/sp"
+        android:orderInCategory="107"
+        android:title="SharedPreference" />
+</menu>
