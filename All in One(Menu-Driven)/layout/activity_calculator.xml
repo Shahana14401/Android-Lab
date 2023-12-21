@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="421dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="374dp">
+
+            <TextView
+                android:id="@+id/htxt"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/ltxt"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:hint="0"
+                android:textAlignment="textEnd"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="355dp"
+            android:layout_height="275dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:columnCount="4"
+            android:rowCount="5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="480dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="BS"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="C"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="%"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/eq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="="
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/sev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="7"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="8"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="9"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="+"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="4"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="5"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="6"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="-"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="1"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="2"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="3"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="/"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="0"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="."
+                app:cornerRadius="@dimen/cardview_default_radius" />
+
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:text="x"
+                app:cornerRadius="@dimen/cardview_default_radius" />
+        </GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
